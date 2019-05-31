@@ -45,36 +45,33 @@ describe('Thermostat', function(){
     })
   });
 
-  // describe('energy usage', function(){
-  //   beforeEach(function(){
-  //     thermostat.temperature = 10
-  //   });
+  describe('energy usage', function(){
+    beforeEach(function(){
+      thermostat.temperature = 10
+    });
 
-  //   it('gets low energy usage when temp < 18 deg', function(){
+    it('gets low energy usage when temp < 18 deg', function(){
+      for (i = 0; i < 7; i++) {
+        thermostat.up();
+      }
+      expect(thermostat.energyUsage()).toEqual('Low usage')
+    })
 
-  //     for (i = 0; i < 7; i++) {
-  //       thermostat.up();
-  //     }
+    it('gets medium energy usage when temp < 25 deg', function(){
+      for (i = 0; i < 14; i++) {
+        thermostat.up();
+      }
+      expect(thermostat.energyUsage()).toEqual('Medium usage')
+    })
 
-  //     expect(thermostat.energy_usage).toEqual('Low usage')
-  //   })
+    it('gets high energy usage when temp >= 25 deg', function(){
+      for (i = 0; i < 15; i++) {
+        thermostat.up();
+      }
 
-  //   it('gets medium energy usage when temp < 25 deg', function(){
-  //     for (i = 0; i < 14; i++) {
-  //       thermostat.up();
-  //     }
-
-  //     expect(thermostat.energy_usage).toEqual('Medium usage')
-  //   })
-
-  //   it('gets high energy usage when temp >= 25 deg', function(){
-  //     for (i = 0; i < 15; i++) {
-  //       thermostat.up();
-  //     }
-
-  //     expect(thermostat.energy_usage).toEqual('High usage')
-  //   })
-  // });
+      expect(thermostat.energyUsage()).toEqual('High usage')
+    })
+  });
 
 
   describe('power saving', function(){
