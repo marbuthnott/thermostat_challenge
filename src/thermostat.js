@@ -21,12 +21,12 @@ var Thermostat = function(){
 
   Thermostat.prototype.energyUsage = function() {
     if (this.temperature < this.MEDIUM_ENERGY_USAGE_LIMIT) {
-      return 'Low usage';
+      return 'low-usage';
     }
     else if (this.temperature < this.MAXIMUM_POWER_SAVING_TEMPERATURE) {
-      return 'Medium usage';
+      return 'medium-usage';
     }
-    return 'High usage';
+    return 'high-usage';
   };
 
   Thermostat.prototype.reset = function(){

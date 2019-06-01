@@ -1,15 +1,11 @@
-#GREEN {
+.low-usage {
   color: green;
 }
 
-#YELLOW {
-  color: yellow;
+.medium-usage {
+  color: black;
 }
 
-#RED {
+.high-usage {
   color: red;
-} 
-
-.styleclass {
-  border: 5px solid tomato
 }

@@ -54,14 +54,14 @@ describe('Thermostat', function(){
       for (i = 0; i < 7; i++) {
         thermostat.up();
       }
-      expect(thermostat.energyUsage()).toEqual('Low usage')
+      expect(thermostat.energyUsage()).toEqual('low-usage')
     })
 
     it('gets medium energy usage when temp < 25 deg', function(){
       for (i = 0; i < 14; i++) {
         thermostat.up();
       }
-      expect(thermostat.energyUsage()).toEqual('Medium usage')
+      expect(thermostat.energyUsage()).toEqual('medium-usage')
     })
 
     it('gets high energy usage when temp >= 25 deg', function(){
@@ -69,7 +69,7 @@ describe('Thermostat', function(){
         thermostat.up();
       }
 
-      expect(thermostat.energyUsage()).toEqual('High usage')
+      expect(thermostat.energyUsage()).toEqual('high-usage')
     })
   });
 
