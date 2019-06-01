@@ -12,14 +12,24 @@
 
   <body>
     <h1 id="temperature"></h1>
-    <button class="button" id="temp-up">Temp Up</button>
+    <button id="temp-up">Temp Up</button>
     <br>
-    <button class="button" id="temp-down">Temp Down</button>
+    <button id="temp-down">Temp Down</button>
     <br>
-    <button class="button" id="temp-reset">Temp Reset</button>
+    <button id="temp-reset">Temp Reset</button>
     <br>
     Power saving mode: <span id="psm-status"></span>
     <button id="psm-toggle">Toggle PSM</button>
+
+    <section>
+        <h1>Current temperature: <span id="current-temperature">20</span></h1>
+        <select id="current-city">
+          <option value="london">London</option>
+          <option value="chicago">Chicago</option>
+          <option value="paris">Paris</option>
+          <option value="tokyo">Tokyo</option>
+        </select>
+    </section>
 
   </body>
 </html>
