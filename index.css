@@ -1,0 +1,15 @@
+#GREEN {
+  color: green;
+}
+
+#YELLOW {
+  color: yellow;
+}
+
+#RED {
+  color: red;
+} 
+
+.styleclass {
+  border: 5px solid tomato
+}

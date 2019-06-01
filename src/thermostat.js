@@ -11,12 +11,8 @@ var Thermostat = function(){
     return this.temperature;
   };
 
-  Thermostat.prototype.switchPowerSavingOff = function(){
-    return this.power_saving = false;
-  };
-
-  Thermostat.prototype.switchPowerSavingOn = function(){
-    return this.power_saving = true;
+  Thermostat.prototype.togglePowerSavingMode = function() {
+    this.power_saving = !this.power_saving;
   };
 
   Thermostat.prototype.isPowerSavingOn = function(){

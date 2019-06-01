@@ -94,16 +94,16 @@ describe('Thermostat', function(){
     });
 
     it('can switch power saving off', function(){
-      thermostat.switchPowerSavingOff();
+      thermostat.togglePowerSavingMode();
 
       expect(thermostat.isPowerSavingOn()).toBe(false)
     });
 
     it('can switch power saving on', function(){
-      thermostat.switchPowerSavingOff();
+      thermostat.togglePowerSavingMode();
       expect(thermostat.isPowerSavingOn()).toBe(false)
 
-      thermostat.switchPowerSavingOn();
+      thermostat.togglePowerSavingMode();
       expect(thermostat.isPowerSavingOn()).toBe(true)
     });
   })
