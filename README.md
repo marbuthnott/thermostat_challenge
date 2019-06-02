@@ -1,15 +1,18 @@
 Thermostat Challenge
 ---------------------
 
-### Features to add:
+## Introduction
 
--[X] Thermostat starts at 20 degrees
--[X] You can increase the temperature with an up function
--[X] You can decrease the temperature with a down function
--[X] The minimum temperature is 10 degrees
--[X] If power saving mode is on, the maximum temperature is 25 degrees
--[X] If power saving mode is off, the maximum temperature is 32 degrees
--[X] Power saving mode is on by default
--[X] You can reset the temperature to 20 with a reset function
--[X] You can ask about the thermostat's current energy usage: < 18 is low-usage, < 25 is medium-usage, anything else is high-usage.
-(In the challenges where we add an interface, low-usage will be indicated with green, medium-usage indicated with black, high-usage indicated with red.)
+This project was completed over week 5 of the Makers Academy software engineering bootcamp. In this project I have used Javascript to create a thermostat application which can:
+
+* set the temperature
+* toggle power saving mode on and off
+* indicate energy usage by a change in text color
+* provide current city temperatures by using AJAX to retrieve data from an API
+
+All functionality for the web app is complete. Styling will have to come later...
+
+## Getting Started
+
+* Run `git clone git@github.com:marbuthnott/thermostat_challenge.git` from the terminal.
+* Run `open thermostat.html` to start the application in a web browser.
